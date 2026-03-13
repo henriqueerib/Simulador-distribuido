@@ -1,8 +1,10 @@
 # Relatório de Sistemas Distribuídos
 
 ## Identificação do Grupo
-* **Luiz Henrique Ribeiro** - Matrícula: [2520528]
-* **[Nome do Colega]** - Matrícula: [Matrícula]
+* **Luiz Henrique Ribeiro** - Matrícula: 2520528
+* **Leonardo Silva Ferreira** - Matrícula: Matrícula
+* **Ravi Freitas** - Matrícula: 2316154
+* **Nome do Colega** - Matrícula: Matrícula
 
 ---
 
