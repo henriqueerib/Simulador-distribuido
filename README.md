@@ -46,6 +46,10 @@ O simulador executa **10.000 rodadas** para cada configuração. Em cada rodada:
 | 0.90 | 5 | 0.998365 | 0.998200 | 0.000165 |
 | 0.90 | 10 | 0.348678 | 0.349100 | 0.000422 |
 
+### Gráfico Comentado
+O gráfico abaixo correlaciona a probabilidade individual ($p$) com a disponibilidade total ($A$).
+
+![Gráfico de Resultados](comparacao_disponibilidade.png)
 
 ### Análise dos Gráficos
 * **Aproximação:** As curvas teóricas (linhas) e os pontos experimentais (círculos) sobrepõem-se quase perfeitamente, provando que o modelo matemático binomial descreve com precisão o comportamento real de sistemas distribuídos.
