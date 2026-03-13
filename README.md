@@ -1,4 +1,4 @@
-# Relatório de Sistemas Distribuídos - Exercício 1
+# Relatório de Sistemas Distribuídos
 
 ## Identificação do Grupo
 * **Luiz Henrique Ribeiro** - Matrícula: [2520528]
