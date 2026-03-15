@@ -4,7 +4,7 @@
 * **Luiz Henrique Ribeiro** - Matrícula: 2520528
 * **Leonardo Silva Ferreira** - Matrícula: Matrícula
 * **Ravi Freitas** - Matrícula: 2316154
-* **Nome do Colega** - Matrícula: Matrícula
+* **Luca Solon** - Matrícula: 1910486
 
 ---
 
