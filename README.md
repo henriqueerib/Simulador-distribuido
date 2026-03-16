@@ -2,7 +2,7 @@
 
 ## Identificação do Grupo
 * **Luiz Henrique Ribeiro** - Matrícula: 2520528
-* **Leonardo Silva Ferreira** - Matrícula: Matrícula
+* **Leonardo Silva Ferreira** - Matrícula: 2319973
 * **Ravi Freitas** - Matrícula: 2316154
 * **Luca Solon** - Matrícula: 1910486
 
@@ -57,3 +57,70 @@ O gráfico abaixo correlaciona a probabilidade individual ($p$) com a disponibil
 * **Aproximação:** As curvas teóricas (linhas) e os pontos experimentais (círculos) sobrepõem-se quase perfeitamente, provando que o modelo matemático binomial descreve com precisão o comportamento real de sistemas distribuídos.
 * **Divergência:** Pequenas variações ocorrem apenas devido à natureza estocástica da simulação, tendendo a zero conforme o número de rodadas aumenta.
 * **Conclusão Prática:** Para sistemas que exigem alta disponibilidade, deve-se manter $k$ baixo em relação a $n$. Para sistemas que exigem consistência estrita ($k=n$), a infraestrutura individual de cada nó deve ser de altíssima confiabilidade, pois a falha é multiplicativa.
+
+## 3. Exercício Adicional: Disponibilidade com p = 0.5 e k = 1
+
+Fixando os seguintes parâmetros
+
+- Probabilidade individual: **p = 0.5**
+- Quórum mínimo: **k = 1**
+
+Nesse cenário, o sistema permanece disponível se **ao menos um servidor estiver ativo**.
+
+A fórmula simplificada torna-se:
+
+$$
+A = 1 - (1 - p)^n
+$$
+
+Substituindo $p = 0.5$:
+
+$$
+A = 1 - (0.5)^n
+$$
+
+---
+
+## Objetivo
+
+Determinar o **número mínimo de servidores ($n$)** necessários para atingir diferentes níveis de disponibilidade.
+
+---
+
+## Resultados
+
+| Disponibilidade desejada | Servidores necessários (n) |
+|---|---|
+|90%|4|
+|99%|7|
+|99.9%|10|
+|99.99%|14|
+|99.999%|17|
+|99.9999%|20|
+
+---
+
+## Perda anual de disponibilidade
+
+Considerando 1 ano com 525600 minutos, a perda anual de serviço pode ser calculada por:
+
+$$
+\text{Perda anual (min)} = (1-A)\cdot 525600
+$$
+
+### Tabela de indisponibilidade anual
+
+| Disponibilidade desejada | Servidores necessários (n) | Perda em 1 ano |
+|---|---:|---:|
+|90%|4|52.560 min|
+|99%|7|5.256 min|
+|99.9%|10|525.6 min|
+|99.99%|14|52.56 min|
+|99.999%|17|5.256 min|
+|99.9999%|20|0.5256 min|
+
+### Interpretação
+
+À medida que a disponibilidade aumenta, o tempo total de indisponibilidade anual diminui drasticamente.  
+Por exemplo, sair de 99.9% para 99.99% reduz a perda anual de aproximadamente 8 horas e 45 minutos para menos de 1 hora.
+
